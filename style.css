@@ -1,4 +1,4 @@
-/* Default Theme (Bright) */
+
 :root {
     --bg-color: #ffffff;
     --text-color: #000000;
@@ -21,7 +21,7 @@ body {
     transition: 0.4s ease-in-out;
 }
 
-/* Theme Toggle Button */
+
 .theme-btn {
     position: fixed;
     top: 20px;
@@ -205,3 +205,4 @@ body {
     width: 100%;
   }
 }
+
