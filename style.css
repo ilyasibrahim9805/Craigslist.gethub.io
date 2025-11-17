@@ -206,6 +206,7 @@ body {
   }
 }
 
+/* Code for Footer */
 .footer {
   margin-top: 150px;
   color: rgb(70, 70, 70);
@@ -245,6 +246,7 @@ body {
 .col-3 {
   flex-grow: .2;
 }
+
 .col-4 {
   flex-grow: .2;
 }
@@ -262,6 +264,7 @@ body {
   color: rgb(120, 120, 120);
   padding-bottom: 20px; 
 }
+
 .col-4 a {
   display: block;
   text-decoration: none;
