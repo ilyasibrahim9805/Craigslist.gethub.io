@@ -23,7 +23,7 @@ body {
 
 
 .theme-btn {
-    position: fixed;
+    position: absolute;
     top: 20px;
     right: 20px;
     background: var(--accent);
@@ -42,7 +42,7 @@ body {
 }
 
 .user {
-  position: fixed;
+  position: absolute;
   top: 18px;
   right: 180px;   
   z-index: 998;
@@ -285,5 +285,6 @@ body {
   padding-bottom: 20px; 
 
 }
+
 
 
