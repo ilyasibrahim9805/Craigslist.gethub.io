@@ -9,72 +9,101 @@
 <body>
 
 
-<div class="user">
-    <a href="#"><img src="img/man.png" alt="User Logo"></a><p>Account</p>
-  </div>
+<header class="header-bar">
   
- <div class="craigslist">
-    <a href="https://ilyasibrahim9805.github.io/Craigslist.gethub.io/"><img src="img/Craigslist-Logo.png" alt="Craigslist Logo"></a>
+  <div class="craigslist-logo">
+    <a href="#"><img src="img/Craigslist-Logo.png" alt="Craigslist Logo"></a>
   </div>
 
-  
+  <div class="header-right">
+      <div class="user">
+        <a href="#"><img src="img/man.png" alt="User"></a>
+        <p>Account</p>
+      </div>
+
+      <button id="themeToggle" class="theme-btn">🌙 Dark Mode</button>
+  </div>
+</header>
+
+
+<div class="sticky-wrapper">
   <div class="nav-container">
 
+   
     <div class="nav-item">
       <img src="img/house.png.png">
       <p>Housing</p>
+
       <div class="dropdown">
-        <a target="blank" href="https://www.apartments.com/">Apartments</a>
-        <a href="#">Rooms</a>
-        <a href="#">Sublets</a>
+        <a href="#">Apartments</a>
+        <a href="#">Houses for Rent</a>
+        <a href="#">Rooms & Roommates</a>
+        <a href="#">Sublets / Temporary</a>
+        <a href="#">Vacation Rentals</a>
       </div>
     </div>
 
     <div class="divider"></div>
 
+  
     <div class="nav-item">
       <img src="img/Image Pasted 2025-08-11 at 06.41.58.png">
       <p>Community</p>
+
       <div class="dropdown">
         <a href="#">Events</a>
         <a href="#">Volunteering</a>
-        <a href="#">Meetups</a>
+        <a href="#">Lost & Found</a>
+        <a href="#">Free / Giveaways</a>
+        <a href="#">Local Announcements</a>
       </div>
     </div>
 
     <div class="divider"></div>
 
+   
     <div class="nav-item">
       <img src="img/Image Pasted 2025-08-11 at 06.44.43.png">
       <p>Services</p>
+
       <div class="dropdown">
         <a href="#">Cleaning</a>
+        <a href="#">Handyman & Repairs</a>
+        <a href="#">Landscaping</a>
         <a href="#">Tutoring</a>
-        <a href="#">Repairs</a>
+        <a href="#">Moving & Hauling</a>
       </div>
     </div>
 
     <div class="divider"></div>
 
+  
     <div class="nav-item">
       <img src="img/Image Pasted 2025-08-11 at 06.48.00.png">
       <p>For Sale</p>
+
       <div class="dropdown">
         <a href="#">Electronics</a>
         <a href="#">Furniture</a>
         <a href="#">Clothing</a>
+        <a href="#">Home & Garden</a>
+        <a href="#">Books & Media</a>
       </div>
     </div>
 
     <div class="divider"></div>
 
+    
     <div class="nav-item">
       <img src="img/Image Pasted 2025-08-11 at 06.49.55.png">
-      <p>Discussion<br>Forms</p>
+      <p>Discussion</p>
+
       <div class="dropdown">
-        <a href="#">General</a>
-        <a href="#">Q&A</a>
-        <a href="#">Local News</a>
+        <a href="#">General Discussion</a>
+        <a href="#">Advice</a>
+        <a href="#">Local Issues</a>
+        <a href="#">Roommate Talk</a>
+        <a href="#">Buying & Selling</a>
       </div>
     </div>
 
@@ -83,63 +112,82 @@
     <div class="nav-item">
       <img src="img/Image Pasted 2025-08-11 at 06.51.19.png">
       <p>Jobs</p>
+
       <div class="dropdown">
-        <a href="#">Full-time</a>
-        <a href="#">Part-time</a>
-        <a href="#">Internships</a>
+        <a href="#">Customer Service</a>
+        <a href="#">Sales & Retail</a>
+        <a href="#">Office / Admin</a>
+        <a href="#">Skilled Trades</a>
+        <a href="#">Healthcare</a>
+        <a href="#">IT & Software</a>
+        <a href="#">Education</a>
+        <a href="#">Transportation / Delivery</a>
       </div>
     </div>
 
   </div>
+</div>
 
-  
-  <div class="search-wrapper">
-    <input type="text" placeholder="Search categories, items, or posts...">
-    <button>Search</button>
-  </div>
 
-  
-  <button id="themeToggle" class="theme-btn">🌙 Dark Mode</button>
 
-  <script src="script.js"></script>
+<!-- SEARCH -->
+<div class="search-wrapper">
+  <input type="text" placeholder="Search categories, items, or posts...">
+  <button>Search</button>
+</div>
 
-  
-  <div class="footer">
-    <div class ="col-1">
-      <h3>Need Help?</h3>
-      <button type="button" class="contact-button">Contact Us</button>
+<footer class="footer">
+    <div class="footer-container">
+
+        <div class="footer-column">
+            <h3>Need Help?</h3>
+            <p>If you have questions or issues, we’re here to help.</p>
+            <button class="contact-button">Contact Us</button>
+        </div>
+
+        <div class="footer-column">
+            <h3>About</h3>
+            <a href="#">About Craigslist</a>
+            <a href="#">Best of Craigslist</a>
+            <a href="#">Careers</a>
+            <a href="#">What's New</a>
+        </div>
+
+        <div class="footer-column">
+            <h3>Resources</h3>
+            <a href="#">Help Center</a>
+            <a href="#">FAQ</a>
+            <a href="#">Safety Tips</a>
+            <a href="#">Legal</a>
+            <a href="#">Abuse Reporting</a>
+        </div>
+
+        <div class="footer-column">
+            <h3>Giving</h3>
+            <a href="#">Craigslist Charitable</a>
+            <a href="#">Craig Newmark Philanthropy</a>
+        </div>
+
+        <div class="footer-column">
+            <h3>Locations</h3>
+            <a href="#">United States</a>
+            <a href="#">Canada</a>
+            <a href="#">Europe</a>
+            <a href="#">Asia-Pacific</a>
+        </div>
+
     </div>
 
-    <div class ="col-2">
-      <h3>About</h3>
-      <a href="#">About Craigslist</a>
-      <a href="#">Best of Craigslist</a>
-      <a href="#">Careers</a>
-      <a href="#">What's New</a>
+    <div class="footer-bottom">
+        <p>© 2025 Craigslist Redesign • Created for Educational Purposes</p>
     </div>
+</footer>
 
-    <div class ="col-3">
-      <h3>Resources</h3>
-      <a href="#">Help</a>
-      <a href="#">FAQ</a>
-      <a href="#">Abuse</a>
-      <a href="#">Legal</a>
-      <a href="#">Safety Tips</a>
-    </div>
-
-    <div class ="col-4">
-      <h3>Giving</h3>
-      <a href="#">Craigslist Charitable</a>
-      <a href="#">Craig Newmark Philanthropy</a>
-    </div>
-    
-    <div class ="col-5">
-      <h3>Location</h3>
-    </div>
-  </div>
+<script src="script.js"></script>
 
 </body>
 </html>
+
 
 
 
