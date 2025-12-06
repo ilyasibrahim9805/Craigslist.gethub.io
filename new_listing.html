@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Post a New Listing - Craigslist</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="header-bar">
+  <div class="craigslist-logo">
+    <a href="index.html"><img src="img/Craigslist-Logo.png" alt="Craigslist Logo"></a>
+  </div>
+
+  <div class="header-right">
+      <div class="user">
+        <a href="reg_login.html"><img src="img/man.png" alt="User"></a>
+        <p>Account</p>
+      </div>
+      <button id="themeToggle" class="theme-btn">🌙 Dark Mode</button>
+  </div>
+</header>
+
+<main class="post-listing-container">
+
+    <div class="post-header">
+        <h1>Create a New Listing</h1>
+        <a href="index.html" class="cancel-link">Cancel Posting</a>
+    </div>
+    
+    <div class="step-indicator">
+        <div class="step active">1. Category</div>
+        <div class="step">2. Details</div>
+        <div class="step">3. Photos</div>
+        <div class="step">4. Review</div>
+    </div>
+
+    <form class="listing-form" action="#" method="POST" enctype="multipart/form-data">
+        
+        <section class="form-section">
+            <h2>1. Choose Location & Category</h2>
+            <p>Select the geographic area and the category that best fits your item or service.</p>
+
+            <div class="field-group">
+                <label for="post-location">Location (City/Neighborhood)</label>
+                <input type="text" id="post-location" name="location" placeholder="e.g., Los Angeles, CA or Santa Monica" required>
+            </div>
+            
+            <div class="field-group-row">
+                <div class="field-group">
+                    <label for="main-category">Main Category</label>
+                    <select id="main-category" name="main_category" required>
+                        <option value="">-- Select Main Category --</option>
+                        <option value="for_sale">For Sale</option>
+                        <option value="housing">Housing</option>
+                        <option value="jobs">Jobs</option>
+                        <option value="services">Services</option>
+                        <option value="community">Community</option>
+                    </select>
+                </div>
+                
+                <div class="field-group">
+                    <label for="sub-category">Sub-Category</label>
+                    <select id="sub-category" name="sub_category" required>
+                        <option value="">-- Select Sub-Category --</option>
+                        <option value="electronics">Electronics (For Sale)</option>
+                        <option value="apartments">Apartments (Housing)</option>
+                        <option value="customerservice">Customer Service (Jobs)</option>
+                    </select>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="form-section">
+            <h2>2. Listing Details</h2>
+            
+            <div class="field-group">
+                <label for="post-title">Listing Title (Be specific and descriptive)</label>
+                <input type="text" id="post-title" name="title" maxlength="70" placeholder="e.g., Apple Macbook Pro 13-inch (M1 Chip) - Great Condition" required>
+                <small>Maximum 70 characters.</small>
+            </div>
+
+            <div class="field-group">
+                <label for="post-description">Detailed Description</label>
+                <textarea id="post-description" name="description" rows="8" placeholder="Include important details like condition, specs, payment methods, and pickup location." required></textarea>
+            </div>
+
+            <div class="field-group-row">
+                <div class="field-group">
+                    <label for="post-price">Price ($)</label>
+                    <input type="number" id="post-price" name="price" min="0" placeholder="0 for Free/Trade">
+                </div>
+                <div class="field-group">
+                    <label for="post-contact">Preferred Contact Email</label>
+                    <input type="email" id="post-contact" name="contact_email" placeholder="name@example.com" required>
+                </div>
+            </div>
+
+            <div class="checkbox-group">
+                <input type="checkbox" id="negotiable" name="negotiable">
+                <label for="negotiable">Price is Negotiable</label>
+            </div>
+            <div class="checkbox-group">
+                <input type="checkbox" id="show_email" name="show_email">
+                <label for="show_email">Show my email in the posting</label>
+            </div>
+        </section>
+        
+        <section class="form-section">
+            <h2>3. Add Photos</h2>
+            <p>Listings with photos get more attention. You can upload up to 8 images.</p>
+
+            <div class="image-upload-area" id="drop-area">
+                <p>Drag and drop your photos here, or click to select files.</p>
+                <input type="file" id="file-input" multiple accept="image/*" hidden>
+            </div>
+            
+            <div class="thumbnail-preview" id="thumbnail-preview">
+                </div>
+            <small>Accepted formats: JPG, PNG. Max file size: 5MB per image.</small>
+        </section>
+
+
+        <div class="form-actions">
+            <button type="submit" class="contact-button publish-btn">Publish Listing</button>
+            <button type="reset" class="reset-btn">Clear Form</button>
+        </div>
+
+    </form>
+</main>
+
+
+<footer class="footer">
+    <div class="footer-container">
+        <div class="footer-column">
+            <h3>Need Help?</h3>
+            <p>If you have questions or issues, we’re here to help.</p>
+            <button class="contact-button">Contact Us</button>
+        </div>
+
+        <div class="footer-column">
+            <h3>About</h3>
+            <a href="#">About Craigslist</a>
+            <a href="#">Best of Craigslist</a>
+            <a href="#">Careers</a>
+            <a href="#">What's New</a>
+        </div>
+
+        <div class="footer-column">
+            <h3>Resources</h3>
+            <a href="#">Help Center</a>
+            <a href="#">FAQ</a>
+            <a href="#">Safety Tips</a>
+            <a href="#">Legal</a>
+            <a href="#">Abuse Reporting</a>
+        </div>
+
+        <div class="footer-column">
+            <h3>Giving</h3>
+            <a href="#">Craigslist Charitable</a>
+            <a href="#">Craig Newmark Philanthropy</a>
+        </div>
+
+        <div class="footer-column">
+            <h3>Locations</h3>
+            <a href="#">United States</a>
+            <a href="#">Canada</a>
+            <a href="#">Europe</a>
+            <a href="#">Asia-Pacific</a>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <p>© 2025 Craigslist Redesign • Created for Educational Purposes</p>
+    </div>
+</footer>
+
+<script src="script.js"></script>
+<script>
+</script>
+
+</body>
+</html>

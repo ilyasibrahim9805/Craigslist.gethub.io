@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Electronics - Craigslist</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="header-bar">
+    <div class="craigslist-logo">
+        <a href="index.html"><img src="img/Craigslist-Logo.png" alt="Craigslist Logo"></a>
+    </div>
+
+    <div class="header-right">
+        <div class="user">
+            <a href="reg_login.html"><img src="img/man.png" alt="User"></a>
+            <p>Account</p>
+        </div>
+        <button id="themeToggle" class="theme-btn">🌙 Dark Mode</button>
+    </div>
+</header>
+<div class="category-page-container">
+    
+    <aside class="sidebar">
+        <h2>Filters</h2>
+        
+        <div class="filter-group">
+            <h3>Location</h3>
+            <select>
+                <option>Current City</option>
+                <option>Nearby Areas</option>
+                <option>All US</option>
+            </select>
+        </div>
+
+        <div class="filter-group">
+            <h3>Price Range</h3>
+            <input type="number" placeholder="Min Price">
+            <input type="number" placeholder="Max Price">
+        </div>
+
+        <div class="filter-group">
+            <h3>Condition</h3>
+            <label><input type="checkbox"> New</label>
+            <label><input type="checkbox"> Used (Like New)</label>
+            <label><input type="checkbox"> Used (Good)</label>
+        </div>
+
+        <button class="apply-filters">Apply Filters</button>
+    </aside>
+
+    <main class="results-content">
+        <h1>Electronics for Sale</h1>
+        <p class="search-summary">Showing 1-20 of 150 results</p>
+
+        <div class="sort-options">
+            <span>Sort by:</span>
+            <select>
+                <option>Newest First</option>
+                <option>Price: Low to High</option>
+                <option>Price: High to Low</option>
+            </select>
+        </div>
+
+        <div class="results-list">
+            
+            <a href="macbook_listing.html" class="listing-card">
+                <div class="listing-image">
+                    <img src="https://via.placeholder.com/150x150.png?text=Item+Image" alt="Item Image">
+                </div>
+                <div class="listing-info">
+                    <h3 class="listing-title">Apple Macbook Pro 13-inch (M1 Chip) - Great Condition</h3>
+                    <p class="listing-price">$850</p>
+                    <p class="listing-location">Los Angeles, CA</p>
+                    <p class="listing-date">Dec 4</p>
+                </div>
+            </a>
+
+            <a href="listing_detail.html" class="listing-card">
+                <div class="listing-image">
+                    <img src="https://via.placeholder.com/150x150.png?text=Item+Image" alt="Item Image">
+                </div>
+                <div class="listing-info">
+                    <h3 class="listing-title">Sony Noise-Cancelling Headphones (WH-1000XM4)</h3>
+                    <p class="listing-price">$180</p>
+                    <p class="listing-location">Santa Monica, CA</p>
+                    <p class="listing-date">Dec 3</p>
+                </div>
+            </a>
+
+            <a href="listing_detail.html" class="listing-card">
+                <div class="listing-image">
+                    <img src="https://via.placeholder.com/150x150.png?text=Item+Image" alt="Item Image">
+                </div>
+                <div class="listing-info">
+                    <h3 class="listing-title">Gaming PC - RTX 3070, i7-10700K, 32GB RAM</h3>
+                    <p class="listing-price">$1200</p>
+                    <p class="listing-location">Burbank, CA</p>
+                    <p class="listing-date">Nov 30</p>
+                </div>
+            </a>
+            
+            </div>
+    </main>
+
+</div>
+
+
+<footer class="footer">
+    <div class="footer-container">
+        <div class="footer-column">
+            <h3>Need Help?</h3>
+            <p>If you have questions or issues, we’re here to help.</p>
+            <button class="contact-button">Contact Us</button>
+        </div>
+
+        <div class="footer-column">
+            <h3>About</h3>
+            <a href="#">About Craigslist</a>
+            <a href="#">Best of Craigslist</a>
+            <a href="#">Careers</a>
+            <a href="#">What's New</a>
+        </div>
+
+        <div class="footer-column">
+            <h3>Resources</h3>
+            <a href="#">Help Center</a>
+            <a href="#">FAQ</a>
+            <a href="#">Safety Tips</a>
+            <a href="#">Legal</a>
+            <a href="#">Abuse Reporting</a>
+        </div>
+
+        <div class="footer-column">
+            <h3>Giving</h3>
+            <a href="#">Craigslist Charitable</a>
+            <a href="#">Craig Newmark Philanthropy</a>
+        </div>
+
+        <div class="footer-column">
+            <h3>Locations</h3>
+            <a href="#">United States</a>
+            <a href="#">Canada</a>
+            <a href="#">Europe</a>
+            <a href="#">Asia-Pacific</a>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <p>© 2025 Craigslist Redesign • Created for Educational Purposes</p>
+    </div>
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
