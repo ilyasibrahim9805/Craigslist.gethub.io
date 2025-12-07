@@ -1,11 +1,11 @@
 
+
 :root {
     --bg-color: #ffffff;
-    --text-color: #000;
+    --text-color: #000000;
     --card-bg: #f4f4f4;
     --accent: #1e40af;
 }
-
 
 .dark-mode {
     --bg-color: #121212;
@@ -14,12 +14,13 @@
     --accent: #fbbf24;
 }
 
+
 body {
     background: var(--bg-color);
     color: var(--text-color);
     margin: 0;
     padding: 0;
-    transition: 0.3s;
+    transition: background 0.3s, color 0.3s;
 }
 
 
@@ -28,12 +29,15 @@ body {
     top: 0;
     width: 100%;
     height: 85px;
+
     display: flex;
     justify-content: space-between;
     align-items: center;
+
     background: var(--bg-color);
     border-bottom: 1px solid #bfbfbf;
     padding: 0 20px 30px;
+
     z-index: 9999;
 }
 
@@ -41,27 +45,29 @@ body {
     width: 140px;
 }
 
+
 .header-right {
     display: flex;
     align-items: center;
     gap: 20px;
 }
 
+
 .user {
-    position: fixed;   
-    top: 6px;
-    right: 180px; 
-    text-align: center;
+    position: fixed;
+    top: 10px;
+    right: 180px;
+
     z-index: 1000;
+    text-align: center;
 }
 
 .user img {
     width: 50px;
-    height: auto;
     border-radius: 50%;
     padding: 6px;
-    background: var(--card-bg); 
-    transition: 0.3s;
+    background: var(--card-bg);
+    transition: transform 0.3s, background 0.3s;
 }
 
 .user:hover img {
@@ -70,16 +76,20 @@ body {
 
 
 .theme-btn {
-    position: fixed;   
+    position: fixed;
     top: 20px;
     right: 20px;
-    background: var(--accent);
-    color: #fff;
+
     padding: 10px 18px;
-    border-radius: 10px;
     border: none;
+    border-radius: 10px;
     cursor: pointer;
+
+    background: var(--accent);
+    color: #ffffff;
+
     z-index: 1000;
+    transition: 0.3s;
 }
 
 .theme-btn:hover {
@@ -89,8 +99,8 @@ body {
 
 .page-title {
     padding-top: 130px;
-    text-align: center;
     margin-bottom: 30px;
+    text-align: center;
 }
 
 .page-title h1 {
@@ -102,6 +112,7 @@ body {
 .listing-container {
     width: 90%;
     max-width: 1200px;
+
     margin: auto;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
@@ -112,19 +123,62 @@ body {
     background: var(--card-bg);
     border-radius: 12px;
     padding: 10px;
-    transition: 0.3s;
+    cursor: pointer;
+    transition: transform 0.3s, background 0.3s;
 }
 
 .listing-card:hover {
     transform: scale(1.03);
 }
 
+
 .listing-img {
     width: 100%;
     height: 170px;
     object-fit: cover;
+
     border-radius: 10px;
+    transition: 0.4s ease-in-out;
 }
+
+
+.img-switch {
+    position: relative;
+    width: 100%;
+    height: 170px;
+}
+
+.img-switch img {
+    width: 100%;
+    height: 170px;
+    object-fit: cover;
+
+    border-radius: 10px;
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    transition: opacity 2s ease;
+}
+
+
+.main-img {
+    opacity: 1;
+}
+
+.alt-img {
+    opacity: 0;
+}
+
+
+.img-switch:hover .main-img {
+    opacity: 0;
+}
+
+.img-switch:hover .alt-img {
+    opacity: 1;
+}
+
 
 .listing-info {
     padding: 10px;
@@ -140,23 +194,27 @@ body {
 }
 
 .price {
-    font-weight: bold;
     margin: 8px 0;
+    font-weight: bold;
 }
 
+
 .view-btn {
-    background: var(--accent);
-    border: none;
-    padding: 10px;
     width: 100%;
+    padding: 10px;
+
+    border: none;
     border-radius: 8px;
-    color: white;
+
+    background: var(--accent);
+    color: #ffffff;
+
     cursor: pointer;
+    transition: 0.3s;
 }
 
 .view-btn:hover {
     opacity: 0.85;
 }
-
 
 
