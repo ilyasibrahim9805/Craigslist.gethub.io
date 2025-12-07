@@ -21,7 +21,7 @@ body {
     font-family: Arial, sans-serif;
 }
 
-/* Header */
+
 .header-bar {
     position: fixed;
     top: 0;
@@ -57,7 +57,7 @@ body {
     background: var(--card-bg);
 }
 
-/* Theme toggle */
+
 .theme-btn {
     background: var(--accent);
     color: #fff;
@@ -67,7 +67,7 @@ body {
     cursor: pointer;
 }
 
-/* Page Title */
+
 .page-title {
     padding-top: 130px;
     text-align: center;
@@ -78,7 +78,7 @@ body {
     font-size: 35px;
 }
 
-/* Listing Layout */
+
 .listing-container {
     width: 90%;
     max-width: 1200px;
@@ -137,3 +137,4 @@ body {
 .view-btn:hover {
     opacity: 0.85;
 }
+
