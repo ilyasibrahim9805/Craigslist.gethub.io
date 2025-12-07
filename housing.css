@@ -76,6 +76,7 @@ body {
 
 .page-title h1 {
     font-size: 35px;
+    color: #a1049adc;
 }
 
 
@@ -137,4 +138,5 @@ body {
 .view-btn:hover {
     opacity: 0.85;
 }
+
 
