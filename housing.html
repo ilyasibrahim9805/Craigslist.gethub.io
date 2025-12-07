@@ -2,13 +2,15 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta-name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Category Listings</title>
   <link rel="stylesheet" href="housing.css">
 </head>
+
 <body>
 
 <header class="header-bar">
+
   <div class="craigslist-logo">
     <a href="index.html">
       <img src="img/Craigslist-Logo.png" alt="Craigslist Logo">
@@ -16,57 +18,82 @@
   </div>
 
   <div class="header-right">
-      <div class="user">
-        <a href="./reg_login.html"><img src="img/man.png" alt="User"></a>
-        <p>Account</p>
-      </div>
+    <div class="user">
+      <a href="./reg_login.html"><img src="img/man.png" alt="User"></a>
+      <p>Account</p>
+    </div>
 
-      <button id="themeToggle" class="theme-btn">🌙 Dark Mode</button>
+    <button id="themeToggle" class="theme-btn">🌙 Dark Mode</button>
   </div>
+
 </header>
 
 <div class="page-title">
-    <h1 id="categoryName">Housing Listings</h1>
+  <h1 id="categoryName">Housing Listings</h1>
 </div>
 
 <div class="listing-container">
 
-    <!-- Listing Card Example -->
-    <div class="listing-card">
-        <img src="img/house1.jpg" class="listing-img">
+  
+  <div class="listing-card"
+       data-img1="img/house1.jpg"
+       data-img2="img/house1.1.jpg"
+       data-img3="img/house1c.jpg">
 
-        <div class="listing-info">
-            <h3>2 Bedroom Apartment</h3>
-            <p class="location">Minneapolis, MN</p>
-            <p class="price">$1,500 / month</p>
-            <button class="view-btn">View Details</button>
-        </div>
-    </div>
+      <div class="img-switch">
+        <img src="img/house1.jpg" class="main-img" alt="">
+        <img src="img/house1.1.jpg" class="alt-img" alt="">
+      </div>
 
-    <div class="listing-card">
-        <img src="img/house2.jpg" class="listing-img">
+      <div class="listing-info">
+        <h3>2 Bedroom Apartment</h3>
+        <p class="location">Minneapolis, MN</p>
+        <p class="price">$1,500 / month</p>
+        <button class="view-btn">View Details</button>
+      </div>
+  </div>
 
-        <div class="listing-info">
-            <h3>Studio Downtown</h3>
-            <p class="location">St. Paul, MN</p>
-            <p class="price">$1,050 / month</p>
-            <button class="view-btn">View Details</button>
-        </div>
-    </div>
+  
+  <div class="listing-card"
+       data-img1="img/house2.jpg"
+       data-img2="img/house2b.jpg"
+       data-img3="img/house2c.jpg">
 
-    <div class="listing-card">
-        <img src="img/house3.avif" class="listing-img">
+      <div class="img-switch">
+        <img src="img/house2.jpg" class="main-img" alt="">
+        <img src="img/house3.1.jpg" class="alt-img" alt="">
+      </div>
 
-        <div class="listing-info">
-            <h3>3 Bedroom Home</h3>
-            <p class="location">Bloomington, MN</p>
-            <p class="price">$2,200 / month</p>
-            <button class="view-btn">View Details</button>
-        </div>
-    </div>
+      <div class="listing-info">
+        <h3>Studio Downtown</h3>
+        <p class="location">St. Paul, MN</p>
+        <p class="price">$1,050 / month</p>
+        <button class="view-btn">View Details</button>
+      </div>
+  </div>
+
+
+  <div class="listing-card"
+       data-img1="img/house3.avif"
+       data-img2="img/house3b.avif"
+       data-img3="img/house3c.avif">
+
+      <div class="img-switch">
+        <img src="img/house3.avif" class="main-img" alt="">
+        <img src="img/house2.1.jpeg" class="alt-img" alt="">
+      </div>
+
+      <div class="listing-info">
+        <h3>3 Bedroom Home</h3>
+        <p class="location">Bloomington, MN</p>
+        <p class="price">$2,200 / month</p>
+        <button class="view-btn">View Details</button>
+      </div>
+
+  </div>
 
 </div>
 
-<script src="landing.js"></script>
 </body>
 </html>
+
